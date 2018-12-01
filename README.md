@@ -27,6 +27,16 @@ simple
 - run `node routing/emit_log_direct.js warning`
 - run `node routing/emit_log_direct.js info`
 
+## Topics
+
+\* (star) can substitute for exactly one word.
+
+\# (hash) can substitute for zero or more words.
+
+- run `node topics/receive_log_topic.js "#"` to receive all the logs
+- run `node topics/receive_log_topic.js "kern.*" "*.critical"`
+- run `node topics/emit_log_topic.js "kern.critical" "A critical kernel error"` to emit a log with a routing key "kern.critical" type
+
 ## Reference
 
 - <https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/javascript-nodejs/src>

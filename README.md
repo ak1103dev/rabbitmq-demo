@@ -37,6 +37,10 @@ simple
 - run `node topics/receive_log_topic.js "kern.*" "*.critical"`
 - run `node topics/emit_log_topic.js "kern.critical" "A critical kernel error"` to emit a log with a routing key "kern.critical" type
 
+- run `node rpc/server.js`
+- run `node rpc/client.js 5`
+- run `node rpc/client.js 8`
+
 ## Reference
 
 - <https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/javascript-nodejs/src>
